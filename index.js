@@ -29,5 +29,6 @@ if(usPhoneRegex.test(inputValue)){
 //botão para limpar resultados
 clearBtn.addEventListener("click",function (){
   resultsDiv.textContent = "";
+  userInput.value = "";
 });
 
