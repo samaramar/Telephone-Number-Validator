@@ -1,0 +1,79 @@
+body {
+    background-color: #3b3b4f;
+    color:white;
+    font-family: arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+h1 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
+main {
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+.phone{
+ background-color: black;
+  width: 240px;
+  height: 460px;
+  border-radius: 20px;
+  padding: 19px;
+  position: relative;   
+}
+.camera {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto 26px;
+}
+.phone label,
+.phone input,
+#results-div {
+  color: black;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  width: 249px;
+  height: 400px;
+  background-color: #dfdfe2;
+  border-radius: 10px;
+  z-index: 0;
+}
+label,
+input,
+#results-div,
+.buttons {
+  z-index: 1;
+}
+input {
+  margin-top: 10px;
+  padding: 6px;
+  width: 200px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.buttons {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  width: 90px;
+  padding: 5px;
+  cursor: pointer;
+}
+
